@@ -1,10 +1,9 @@
 -- Use our database
-USE ShopDB; 
-
-INSERT INTO Orders (ID, CustomerID, Date)
-VALUES (1, 1, '2023-01-01');
+USE ShopDB;
 
 START TRANSACTION;
+INSERT INTO Orders (ID, CustomerID, Date)
+VALUES (1, 1, '2023-01-01');
 
 INSERT INTO OrderItems (ID, OrderID, ProductID, Count)
 VALUES (1, 1, 1, 1);
